@@ -1,1 +1,1 @@
-###Log My Reps - Workout Logger App
+# Log My Reps - Workout Logger App
