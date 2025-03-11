@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Log My Reps</string>
+    <string name="title_activity_workout_player">WorkoutPlayerActivity</string>
 </resources>

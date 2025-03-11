@@ -4,23 +4,35 @@ import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Typography
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
+import com.kaviriteshgupta.logmyreps.R
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = primaryColor,
+    secondary = bgColor,
+    tertiary = primaryColor,
+    background = bgColor,
+    onBackground = bgColor
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = primaryColor,
+    secondary = bgColor,
+    tertiary = primaryColor,
+    background = bgColor,
+    onBackground = bgColor
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -31,6 +43,109 @@ private val LightColorScheme = lightColorScheme(
     onBackground = Color(0xFF1C1B1F),
     onSurface = Color(0xFF1C1B1F),
     */
+)
+
+
+
+private val appTypography = Typography(
+    headlineLarge = TextStyle(
+        fontSize = 30.sp,
+        fontWeight = FontWeight.Bold,
+        fontFamily = FontFamily(
+            Font(
+                R.font.montserrat_bold,
+                FontWeight.Bold,
+                style = FontStyle.Normal
+            )
+        )
+    ),
+    headlineMedium = TextStyle(
+        fontSize = 24.sp,
+        fontWeight = FontWeight.Bold,
+        fontFamily = FontFamily(
+            Font(
+                R.font.montserrat_bold,
+                FontWeight.Bold,
+                style = FontStyle.Normal
+            )
+        )
+    ),
+    titleLarge = TextStyle(
+        fontSize = 20.sp,
+        fontWeight = FontWeight.Bold,
+        fontFamily = FontFamily(
+            Font(
+                R.font.montserrat_bold,
+                FontWeight.Bold,
+                style = FontStyle.Normal
+            )
+        )
+    ),
+    displayLarge = TextStyle(
+        fontSize = 144.sp,
+        fontWeight = FontWeight.Bold,
+        fontFamily = FontFamily(
+            Font(
+                R.font.montserrat_bold,
+                FontWeight.Bold,
+                style = FontStyle.Normal
+            )
+        )
+    ),
+    displayMedium = TextStyle(
+        fontSize = 32.sp,
+        fontWeight = FontWeight.Bold,
+        fontFamily = FontFamily(
+            Font(
+                R.font.montserrat_bold,
+                FontWeight.Bold,
+                style = FontStyle.Normal
+            )
+        )
+    ),
+    displaySmall = TextStyle(
+        fontSize = 16.sp,
+        fontWeight = FontWeight.Bold,
+        fontFamily = FontFamily(
+            Font(
+                R.font.montserrat_bold,
+                FontWeight.Bold,
+                style = FontStyle.Normal
+            )
+        )
+    ),
+    titleMedium = TextStyle(
+        fontSize = 12.sp,
+        fontWeight = FontWeight.Medium,
+        fontFamily = FontFamily(
+            Font(
+                R.font.montserrat_medium,
+                FontWeight.Medium,
+                style = FontStyle.Normal
+            )
+        )
+    ),
+    titleSmall = TextStyle(
+        fontSize = 10.sp,
+        fontWeight = FontWeight.Medium,
+        fontFamily = FontFamily(
+            Font(
+                R.font.montserrat_medium,
+                FontWeight.Medium,
+                style = FontStyle.Normal
+            )
+        )
+    ), bodyMedium = TextStyle(
+        fontSize = 16.sp,
+        fontWeight = FontWeight.Medium,
+        fontFamily = FontFamily(
+            Font(
+                R.font.montserrat_medium,
+                FontWeight.Medium,
+                style = FontStyle.Normal
+            )
+        )
+    )
 )
 
 @Composable
@@ -52,7 +167,7 @@ fun LogMyRepsTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = appTypography,
         content = content
     )
 }

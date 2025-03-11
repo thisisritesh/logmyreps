@@ -13,6 +13,11 @@
         android:theme="@style/Theme.LogMyReps"
         tools:targetApi="31">
         <activity
+            android:name=".player.WorkoutPlayerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_workout_player"
+            android:theme="@style/Theme.LogMyReps" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

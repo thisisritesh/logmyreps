@@ -2,10 +2,11 @@ package com.kaviriteshgupta.logmyreps.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+val bgColor = Color(0xFF171717)
+val primaryTextColor = Color(0xFFFAFAF9)
+val secondaryTextColor = Color(0xFF8F8E90)
+val primaryColor = Color(0xFFD3FF00)
+val buttonTextColor = Color(0xFF010100)
+val cardBgColor = Color(0xFF302F30)
+val disabledComponentColor = Color(0xFF404040)
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
